@@ -1,8 +1,11 @@
-A collection of ROS sensor drivers for projects and research
+### A Collection of ROS Sensor Drivers for Projects 
 
-ROS version: Kinetic
+#### ROS version: Kinetic (Ubuntu 16.04)
 
-Linux: Ubuntu 16.04
+#### Intel RealSense R200
 
-Kernel: 4.13.0-45-generic
-
+$ sudo apt-get install linux-headers-generic  
+$ sudo apt-get install ros-kinetic-librealsense  
+  
+$ roslaunch realsense_camera r200_nodelet_rgbd.launch  
+$ rqt_image_view  
