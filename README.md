@@ -9,6 +9,14 @@
 $ source devel/setup.bash  
 $ roslaunch hls_lfcd_lds_driver hlds_laser.launch  
   
+#### Camera Calibration
+
+$ roslaunch usb_cam usb_cam.launch  
+
+$ rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.025 image:=/usb_cam/image_raw camera:=/usb_cam --no-service-check  
+
+$ rosrun camera_calibration_parsers convert head_camera.yaml head_camera.ini  
+
 #### Intel RealSense R200 Stereo Camera
 
 $ sudo apt-get install linux-headers-generic  
