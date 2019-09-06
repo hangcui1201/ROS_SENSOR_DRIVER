@@ -2,6 +2,27 @@
 
 ### ROS version: Kinetic (Ubuntu 16.04)
 
+#### Logitech F710 Joystick
+
+[REFERENCE](https://www.jetsonhacks.com/2018/08/19/racecar-j-ros-teleoperation/)  
+
+$ sudo apt-get install joystick  
+$ sudo apt-get install libusb-dev  
+$ sudo apt-get install libspnav-dev  
+$ sudo apt-get install libbluetooth-dev  
+
+
+$ sudo chmod a+rw /dev/input/js0  
+$ sudo jstest /dev/input/js0  
+
+$ rosrun joy joy_node  
+$ roslaunch teleop_twist_joy teleop.launch  
+
+<a href="url"><img src="./images/F710_1.png" width="500"></a>  
+<a href="url"><img src="./images/F710_2.png" width="500"></a>  
+<a href="url"><img src="./images/F710_3.png" width="500"></a>  
+  
+  
 #### HLS LFCD LDS 2D Laser
 
 [HLS LFCD LDS 2D LASER DRIVER](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver/tree/kinetic-devel)  
