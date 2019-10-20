@@ -56,6 +56,13 @@ $ roslaunch zed_wrapper zed.launch
 $ source devel/setup.bash  
 $ roslaunch zed_display_rviz display_zed.launch    
 
+#### TI mmWave Radar AWR1843BOOST
+
+$ source devel/setup.bash  
+$ roslaunch ti_mmwave_rospkg rviz_1843_2d.launch  
+
+$ source devel/setup.bash  
+$ roslaunch ti_mmwave_rospkg rviz_1843_3d.launch    
 
 
 
